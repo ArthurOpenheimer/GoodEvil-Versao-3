@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 17678fcea9966424485e8394a14ec19e
+guid: 36a52d0882a92da438cf38f6ff1dd738
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hawa_acenando_0
+      name: Damakos_Special 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964119ef3a69cbf45bf9b00b2843dcf6
+      internalID: 1616014797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damakos_Special 1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cefe7a72a625c429e7ac033e537cf9
+      internalID: 729601647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damakos_Special 1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cab58cdc93530b4ea77169f110be6e2
+      internalID: 44926458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damakos_Special 1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99275ecb72e4ce84a9dd095d703b721c
+      internalID: 222868199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damakos_Special 1_4
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce3aafdec2f1e1d4597ff587a565c4db
-      internalID: -1747254373
+      spriteID: 861b0e250cf177a41ba25e43dab04134
+      internalID: -419893080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hawa_acenando_1
+      name: Damakos_Special 1_5
       rect:
         serializedVersion: 2
         x: 32
@@ -139,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5de15c86a624e9a428c3bb5a1e19474c
-      internalID: -1159840584
+      spriteID: 0f5bd91f46958b44a97cadaa7235057c
+      internalID: -644866463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hawa_acenando_2
+      name: Damakos_Special 1_6
       rect:
         serializedVersion: 2
         x: 64
@@ -160,14 +244,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa1e228c28bd6424dac6173c8a9420e9
-      internalID: -1830328959
+      spriteID: 654ba6dd92e130442887f4166ac258cd
+      internalID: -1667801005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hawa_acenando_3
+      name: Damakos_Special 1_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b34f49da6c23234bb362cc8f1371572
+      internalID: -2086674324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damakos_Special 1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcb446997dd1993428f1a6f0b657bb78
-      internalID: 2052401945
+      spriteID: dd814bf5737756d4882d7c946ca58774
+      internalID: 1368196960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hawa_acenando_4
+      name: Damakos_Special 1_9
       rect:
         serializedVersion: 2
         x: 32
@@ -202,14 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e4157116e0351a489e8b745ad647e80
-      internalID: -1887922300
+      spriteID: f4a5ba64afa3ae443b5883d7594b1c1f
+      internalID: 536500875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hawa_acenando_5
+      name: Damakos_Special 1_10
       rect:
         serializedVersion: 2
         x: 64
@@ -223,14 +328,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fef8668b5de3554b89911de5ad83260
-      internalID: 1798405553
+      spriteID: 3bb8bb8e0d6dee649973dc680a1bddd0
+      internalID: 1198177594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hawa_acenando_6
+      name: Damakos_Special 1_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26066cd6d0a2b141960b463a27492ee
+      internalID: -1389506128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damakos_Special 1_12
       rect:
         serializedVersion: 2
         x: 0
@@ -244,29 +370,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25613d7fb25c51c448bd4663c33c7dc1
-      internalID: 1579975881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hawa_acenando_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af6c136c14da8df409af2838f9e31976
-      internalID: 89254532
+      spriteID: c100f61cade8c754299771e36f0f49a4
+      internalID: -1163242422
       vertices: []
       indices: 
       edges: []
@@ -282,14 +387,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hawa_acenando_4: -1887922300
-      Hawa_acenando_2: -1830328959
-      Hawa_acenando_6: 1579975881
-      Hawa_acenando_0: -1747254373
-      Hawa_acenando_7: 89254532
-      Hawa_acenando_1: -1159840584
-      Hawa_acenando_5: 1798405553
-      Hawa_acenando_3: 2052401945
+      Damakos_Special 1_2: 44926458
+      Damakos_Special 1_1: 729601647
+      Damakos_Special 1_11: -1389506128
+      Damakos_Special 1_7: -2086674324
+      Damakos_Special 1_3: 222868199
+      Damakos_Special 1_9: 536500875
+      Damakos_Special 1_5: -644866463
+      Damakos_Special 1_8: 1368196960
+      Damakos_Special 1_12: -1163242422
+      Damakos_Special 1_0: 1616014797
+      Damakos_Special 1_4: -419893080
+      Damakos_Special 1_6: -1667801005
+      Damakos_Special 1_10: 1198177594
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
