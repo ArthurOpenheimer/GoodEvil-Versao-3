@@ -21,7 +21,9 @@ A terceira versão do game traz uma série de melhorias e adições em relação
   <li>Revisão e refatoramento dos códigos e mecânicas;
   <li>Adição de novas cenas de corte para avanço da história.
     <br></br>
+    </ul>
+    
 # Experimentação:
 Para jogar ou acompanhar o desenvolvimento em tempo real, utilize o sofware git e a seguinte linha de comando.
-
-$ git clone 
+<p>
+ $ git clone https://github.com/GoodEvilGame/GoodEvil-Versao-3.git
