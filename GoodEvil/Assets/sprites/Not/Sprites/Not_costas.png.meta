@@ -109,7 +109,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 34
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,9 +128,9 @@ TextureImporter:
       name: Not_costas_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 0
-        width: 32
+        width: 34
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -149,9 +149,9 @@ TextureImporter:
       name: Not_costas_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 68
         y: 0
-        width: 32
+        width: 34
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
