@@ -603,7 +603,14 @@ MonoBehaviour:
   nameText: {fileID: 1986896478}
   dialogueText: {fileID: 1201727160}
   animator: {fileID: 2043430004}
-  spriteRenderer: {fileID: 251273375}
+  Portrait: {fileID: 251273373}
+  newSprite: {fileID: 21300000, guid: 1b50af9c84dff304084d0df830b1d58e, type: 3}
+  Portraits:
+  - {fileID: 21300000, guid: efadc37ca5e8cdc4b96c8cb3db673795, type: 3}
+  - {fileID: 21300000, guid: 08d2fb4afd858bd4794588a10bfd3d5d, type: 3}
+  - {fileID: 21300000, guid: e8ff5c8863eb71c4a8eedd82c5dd6633, type: 3}
+  - {fileID: 21300000, guid: 1b50af9c84dff304084d0df830b1d58e, type: 3}
+  currentLine: 0
 --- !u!4 &717448717
 Transform:
   m_ObjectHideFlags: 0
