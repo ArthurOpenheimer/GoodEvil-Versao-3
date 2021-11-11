@@ -13,12 +13,14 @@ public class DialogueManager : MonoBehaviour
 
 	public Image Portrait;
 
-	public Sprite newSprite;
-	public Sprite[] Portraits;
+
+
 
 	private Queue<string> sentences;
 	private Queue<string> names;
-	public int currentLine;
+	private Sprite[] Portraits;
+	private Sprite newSprite;
+	private int currentLine;
 	//Use this for initialization
 	void Start()
 	{
@@ -42,6 +44,8 @@ public class DialogueManager : MonoBehaviour
         {
 			names.Enqueue(name);
         }
+		Portraits = dialogue.portraits;
+		newSprite = dialogue.newSprite;
 		DisplayNextSentence();
 	}
 
@@ -52,7 +56,7 @@ public class DialogueManager : MonoBehaviour
 			EndDialogue();
 			return;
 		}
-        if (currentLine == 4) { currentLine = 0; }
+        if (currentLine == Portraits.Length) { currentLine = 0; }
 		Portrait.sprite = newSprite;
 		newSprite = Portraits[currentLine];
 		currentLine++;

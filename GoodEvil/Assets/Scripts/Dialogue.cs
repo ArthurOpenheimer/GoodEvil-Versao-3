@@ -11,5 +11,7 @@ public class Dialogue
 	[TextArea(3, 10)]
 	public string[] sentences;
 	public string[] names;
-	public Sprite[] sprites;
+	public Sprite newSprite;
+	public Sprite[] portraits;
+	
 }
