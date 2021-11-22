@@ -9,18 +9,22 @@ public class DialogueManager : MonoBehaviour
 	public Text nameText;
 	public Text dialogueText;
 
-
 	public Animator animator;
 
-	public SpriteRenderer spriteRenderer;
+	public Image Portrait;
+
+
+
 
 	private Queue<string> sentences;
 	private Queue<string> names;
-
+	private Sprite[] Portraits;
+	private Sprite newSprite;
+	private int currentLine;
 	//Use this for initialization
 	void Start()
 	{
-		spriteRenderer = GetComponent<SpriteRenderer>();
+
 		sentences = new Queue<string>();
 		names = new Queue<string>();
 	}
@@ -40,6 +44,8 @@ public class DialogueManager : MonoBehaviour
         {
 			names.Enqueue(name);
         }
+		Portraits = dialogue.portraits;
+		newSprite = dialogue.newSprite;
 		DisplayNextSentence();
 	}
 
@@ -50,11 +56,15 @@ public class DialogueManager : MonoBehaviour
 			EndDialogue();
 			return;
 		}
-
+        if (currentLine == Portraits.Length) { currentLine = 0; }
+		Portrait.sprite = newSprite;
+		newSprite = Portraits[currentLine];
+		currentLine++;
 		string sentence = sentences.Dequeue();
 		string name = names.Dequeue();
 		StopAllCoroutines();
 		StartCoroutine(TypeSentence(sentence, name));
+
 	}
 
 	IEnumerator TypeSentence(string sentence, string name)
