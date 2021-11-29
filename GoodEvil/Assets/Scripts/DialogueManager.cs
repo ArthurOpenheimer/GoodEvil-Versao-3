@@ -12,7 +12,10 @@ public class DialogueManager : MonoBehaviour
 	public Animator animator;
 
 	public Image Portrait;
-
+	public bool HCs;
+	public int Fala;
+	public int FAC;
+	private int BugPrevent;
 
 
 
@@ -31,6 +34,7 @@ public class DialogueManager : MonoBehaviour
 
 	public void StartDialogue(Dialogue dialogue)
 	{
+		BugPrevent = 0;
 		animator.SetBool("IsOpen", true);
 
 		sentences.Clear();
@@ -86,7 +90,19 @@ public class DialogueManager : MonoBehaviour
 
 	void EndDialogue()
 	{
-		animator.SetBool("IsOpen", false);
+		if (BugPrevent == 0)
+		{
+			animator.SetBool("IsOpen", false);
+			if (FAC == Fala && HCs == true)
+			{
+				FindObjectOfType<CutscneManager>().NextCs();
+			}
+			else if (Fala < FAC && HCs == true)
+			{
+				Fala++;
+			}
+			BugPrevent++;
+		}
 	}
 	//Closing the DialogueBox
 	public void resetCL()

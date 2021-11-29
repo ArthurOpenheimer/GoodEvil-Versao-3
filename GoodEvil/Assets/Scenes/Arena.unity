@@ -781,7 +781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &378841963
 Transform:
   m_ObjectHideFlags: 0
@@ -807,7 +807,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 75a69af0bb39bd94ba1560333f9947e3, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -979,6 +979,8 @@ PlayableDirector:
     value: {fileID: 293552713}
   - key: {fileID: -7290748267152037273, guid: 981ac7e932085644b819a2b6243332ee, type: 2}
     value: {fileID: 293552713}
+  - key: {fileID: 7993696364373286522, guid: 981ac7e932085644b819a2b6243332ee, type: 2}
+    value: {fileID: 879241166}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &611217744
@@ -995,6 +997,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 465026307}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &879241165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879241168}
+  - component: {fileID: 879241167}
+  - component: {fileID: 879241166}
+  m_Layer: 0
+  m_Name: CutsceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &879241166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879241165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 00a6ebecd811370419b0d2a784d0c942, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 879241167}
+          m_TargetAssemblyTypeName: CutscneManager, Assembly-CSharp
+          m_MethodName: Count
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &879241167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879241165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e069b115833a94290b45c59a6b2bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg:
+  - {fileID: 611217742}
+  - {fileID: 378841962}
+--- !u!4 &879241168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879241165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.6566677, y: -0.039693385, z: -0.007288724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912247922
 GameObject:
@@ -1029,6 +1109,9 @@ MonoBehaviour:
   dialogueText: {fileID: 1965307015}
   animator: {fileID: 183714935}
   Portrait: {fileID: 43918829}
+  HCs: 1
+  Fala: 0
+  FAC: 3
 --- !u!4 &912247924
 Transform:
   m_ObjectHideFlags: 0

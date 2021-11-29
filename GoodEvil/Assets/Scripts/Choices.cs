@@ -11,8 +11,9 @@ public class Choices: MonoBehaviour
 
 	public void TriggerDialogue()
 	{
+		FindObjectOfType<DialogueManager>().resetCL();
 		FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-		animator.SetBool("IsOpen", true);
+		animator.SetBool("IsOpen", false);
 		
 	}
 	//Trigger for the Dialogue
