@@ -19,6 +19,7 @@ public class DialogueTrigger : MonoBehaviour
     {
 		if (Input.GetKeyDown("e") && isTrigger==true)
 		{
+			FindObjectOfType<DialogueManager>().resetCL();
 			FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
 		}
     }

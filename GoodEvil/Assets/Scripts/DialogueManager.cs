@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
 		animator.SetBool("IsOpen", true);
 
 		sentences.Clear();
+
 		//Opening and cleaning the DialogueBox
 		foreach (string sentence in dialogue.sentences)
 		{
@@ -44,6 +45,7 @@ public class DialogueManager : MonoBehaviour
         {
 			names.Enqueue(name);
         }
+
 		Portraits = dialogue.portraits;
 		newSprite = dialogue.newSprite;
 		DisplayNextSentence();
@@ -56,10 +58,12 @@ public class DialogueManager : MonoBehaviour
 			EndDialogue();
 			return;
 		}
-        if (currentLine == Portraits.Length) { currentLine = 0; }
-		Portrait.sprite = newSprite;
-		newSprite = Portraits[currentLine];
-		currentLine++;
+		if (currentLine >= Portraits.Length - 1) { currentLine = 0; }
+		
+			currentLine++;
+			Portrait.sprite = newSprite;
+			newSprite = Portraits[currentLine];
+			Debug.Log(currentLine);
 		string sentence = sentences.Dequeue();
 		string name = names.Dequeue();
 		StopAllCoroutines();
@@ -85,4 +89,9 @@ public class DialogueManager : MonoBehaviour
 		animator.SetBool("IsOpen", false);
 	}
 	//Closing the DialogueBox
+	public void resetCL()
+    {
+		currentLine = 0;
+    }
+
 }
