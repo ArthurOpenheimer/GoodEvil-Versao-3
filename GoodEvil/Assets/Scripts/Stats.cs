@@ -38,7 +38,12 @@ public class Stats : MonoBehaviour
 
         if (currentHealth > maxHealth) currentHealth = maxHealth;
     }
+    public void ReduceMana(float value)
+    {
+        currentHealth -= value;
 
+        if (currentMana < 0) currentMana = 0;
+    }
 
 }
 
