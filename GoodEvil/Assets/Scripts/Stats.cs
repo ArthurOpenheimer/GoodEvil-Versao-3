@@ -8,10 +8,12 @@ public class Stats : MonoBehaviour
     [Header("Health")]
     public float currentHealth;
     public float maxHealth;
+    public float regenHealth;
 
     [Header("Mana")]
     public float currentMana;
     public float maxMana;
+    public float regenMana;
 
     [Header("Stamina")]
     public float currentStamina;
@@ -24,6 +26,26 @@ public class Stats : MonoBehaviour
     public int defense;
     public int level;
     public int xp;
+
+    private void Start()
+    {
+        InvokeRepeating("RegenerateMana", 0.0f, regenMana);
+        InvokeRepeating("RegenerateHealth", 0.0f, regenHealth);
+    }
+
+    private void RegenerateMana()
+    {
+        if (currentMana > maxMana) return;
+
+        currentMana++;
+    }
+
+    private void RegenerateHealth()
+    {
+        if (currentHealth > maxHealth) return;
+
+        currentHealth++;
+    }
 
     public void Damage(float value)
     {

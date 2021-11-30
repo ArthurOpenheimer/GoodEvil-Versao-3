@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,9 @@ using UnityEngine;
 public class SkillControler : MonoBehaviour
 {
     public string facing;
+    public Animator playerAnimator;
     public Stats stats;
+    public bool Healing;
     public GameObject fireBallSmall;
     public GameObject fireBallBig;
     public Vector2 skillDirection;
@@ -23,9 +26,20 @@ public class SkillControler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0)) InstanciateSkill(fireBallSmall);
         if (Input.GetKeyDown(KeyCode.Mouse1)) InstanciateSkill(fireBallBig);
-        if (Input.GetKeyDown(KeyCode.Alpha1)) stats.Heal(20);
+        if (Input.GetKeyDown(KeyCode.F)) SetBuff();
+        if (Input.GetKeyDown(KeyCode.G)) playerAnimator.SetTrigger("ExitHeal"); ;
     }
 
+    private void SetBuff()
+    {
+        playerAnimator.SetTrigger("Heal");
+        stats.Heal(20);
+    }
+
+    void ExitAnim()
+    {
+        Healing = false;
+    }
     void InstanciateSkill(GameObject skillPrefab)
     {
         //Pega a mana da skill
