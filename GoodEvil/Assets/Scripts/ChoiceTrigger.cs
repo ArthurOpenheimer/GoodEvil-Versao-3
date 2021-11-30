@@ -16,6 +16,7 @@ public class ChoiceTrigger : MonoBehaviour
     {
         isTrigger = false;
     }
+    //comparação de trigger
     void Update()
     {
         if (Input.GetKeyDown("e") && isTrigger == true)

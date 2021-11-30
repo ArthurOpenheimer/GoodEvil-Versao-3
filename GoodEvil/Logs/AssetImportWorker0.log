@@ -15,9 +15,15 @@ C:/Users/franc/OneDrive/Documentos/Programas/Unity projects/GoodEvil-Versao-3/Go
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 58591
 Successfully changed project path to: C:/Users/franc/OneDrive/Documentos/Programas/Unity projects/GoodEvil-Versao-3/GoodEvil
 C:/Users/franc/OneDrive/Documentos/Programas/Unity projects/GoodEvil-Versao-3/GoodEvil
+=======
+63937
+Successfully changed project path to: C:/Users/joaog/OneDrive/Área de Trabalho/projeto integrado/versao 6/GoodEvil-Versao-3/GoodEvil
+C:/Users/joaog/OneDrive/Área de Trabalho/projeto integrado/versao 6/GoodEvil-Versao-3/GoodEvil
+>>>>>>> 6282e197c9381d376c2972eb0da0c8c625283cbe
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,6 +53,7 @@ C:/Users/franc/OneDrive/Documentos/Programas/Unity projects/GoodEvil-Versao-3/Go
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 344.43 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.0f1 (4bf1ec4b23c9)
@@ -2147,3 +2154,5 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+>>>>>>> 6282e197c9381d376c2972eb0da0c8c625283cbe

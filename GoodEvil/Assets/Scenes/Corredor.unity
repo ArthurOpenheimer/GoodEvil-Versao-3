@@ -221,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 43481633}
   entity: {fileID: 43481632}
+  animator: {fileID: 43481637}
 --- !u!61 &43481635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1138,7 +1139,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.160236
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
