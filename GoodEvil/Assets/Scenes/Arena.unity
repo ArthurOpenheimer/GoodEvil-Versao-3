@@ -1786,12 +1786,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1305051465}
   entity: {fileID: 1305051467}
-<<<<<<< HEAD
   animator: {fileID: 1305051462}
   facing: 
-=======
   animator: {fileID: 0}
->>>>>>> 51b41e3b58d63814b2d9840b8a7f31ca8687f55e
 --- !u!114 &1305051467
 MonoBehaviour:
   m_ObjectHideFlags: 0
