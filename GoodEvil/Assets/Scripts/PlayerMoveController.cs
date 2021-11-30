@@ -8,6 +8,8 @@ public class PlayerMoveController : MonoBehaviour
     public Entity entity;
     private Vector2 movement;
     public Animator animator;
+    public string facing;
+    private int animDirection;
 
     void Start()
     {
@@ -22,35 +24,41 @@ public class PlayerMoveController : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
         //Set the maxValue of the Vector
         movement = Vector2.ClampMagnitude(movement, 1f);
-        animator.SetFloat("VelocityX", movement.x);
-        animator.SetFloat("VelocityY", movement.y);
-
-        if (movement == Vector2.zero)  
-        {
-            animator.SetBool("IsWalking", false);
-        }
-        else
-        {
-            animator.SetBool("IsWalking", true);
-        }
-       /* if (movement.x > 0 ) 
-        {
-            animator.SetFloat("Pos", 0);
-        }
-        else if(movement.x < 0)
-        {
-            animator.SetFloat("Pos", 2);
-        }
-
-        else if (movement.y < 0)
-        {
-            animator.SetFloat("Pos", 1);
-        }*/ 
+        
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + entity.stats.speed * Time.fixedDeltaTime * movement);
-    }
+        rb.MovePosition(rb.position + entity.stats.speed * Time.fixedDeltaTime * movement); 
+        animator.SetFloat("VelocityX", movement.x);
+        animator.SetFloat("VelocityY", movement.y);
 
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        CheckDirection();
+        animator.SetFloat("LastDirection", animDirection); 
+    }
+void CheckDirection()
+    {
+        if (movement.x > 0)
+        {
+            facing = "right";
+            animDirection = 1;
+        }
+        else if (movement.y > 0)
+        {
+            facing = "up";
+            animDirection = 0;
+        }
+        else if (movement.x < 0)
+        {
+            facing = "left";
+            animDirection = 3;
+        }
+        else if (movement.y < 0)
+        {
+            facing = "down";
+            animDirection = 2;
+        } //check where the player is looking 
+    }
 }
